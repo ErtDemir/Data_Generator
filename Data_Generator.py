@@ -14,7 +14,7 @@ def inc_time(time):  # time's type must be datetime  || Increase the time approx
     if decider == 0:
         new_time = time + datetime.timedelta(seconds=(50 + random.randint(0, 5)))
     elif decider == 1:
-        new_time = time + datetime.timedelta(minutes=1, seconds=random.randint(0, 5))  # if concat two of them and seperate them, reduce the possibilities of both of them
+        new_time = time + datetime.timedelta(minutes=1, seconds=random.randint(0, 5))  # if concat two of them and separate them, reduce the possibilities of both of them
     else:                                                                                #
         new_time = time + datetime.timedelta(minutes=1, seconds=5 + random.randint(0, 5))  #
     return new_time
